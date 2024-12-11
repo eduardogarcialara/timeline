@@ -70,28 +70,31 @@
                         <div class="text-center max-w-2xl mx-auto mb-8">
                             <div class="flex flex-wrap justify-center gap-4">
                                 <!-- WhatsApp -->
-                                <a href="https://api.whatsapp.com/send?text=¡Echa un vistazo al nuevo álbum de Ramón García! %0A%0A" 
-                                   target="_blank"
-                                   class="flex-1 min-w-[140px] max-w-[200px] bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg flex items-center justify-center space-x-2">
+                                <button class="sharer button flex-1 min-w-[140px] max-w-[200px] bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg flex items-center justify-center space-x-2"
+                                        data-sharer="whatsapp"
+                                        data-title="¡Echa un vistazo al nuevo álbum de Ramón García!"
+                                        data-description="Descripción"
+                                        data-url="https://timeline.mktopulse.com">
                                     <i data-lucide="message-circle" class="w-5 h-5"></i>
                                     <span>WhatsApp</span>
-                                </a>
+                                </button>
                                 
                                 <!-- Twitter/X -->
-                                <a href="https://twitter.com/intent/tweet?text=¡Echa un vistazo al nuevo álbum de Ramón García!&url=" 
-                                   target="_blank"
-                                   class="flex-1 min-w-[140px] max-w-[200px] bg-black hover:bg-gray-800 text-white px-4 py-2 rounded-lg flex items-center justify-center space-x-2">
+                                <button class="sharer button flex-1 min-w-[140px] max-w-[200px] bg-black hover:bg-gray-800 text-white px-4 py-2 rounded-lg flex items-center justify-center space-x-2"
+                                        data-sharer="twitter"
+                                        data-title="¡Echa un vistazo al nuevo álbum de Ramón García!"
+                                        data-url="https://timeline.mktopulse.com">
                                     <i data-lucide="twitter" class="w-5 h-5"></i>
                                     <span>Twitter</span>
-                                </a>
+                                </button>
                                 
                                 <!-- Facebook -->
-                                <a href="https://www.facebook.com/sharer/sharer.php?u=" 
-                                   target="_blank"
-                                   class="flex-1 min-w-[140px] max-w-[200px] bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg flex items-center justify-center space-x-2">
+                                <button class="sharer button flex-1 min-w-[140px] max-w-[200px] bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg flex items-center justify-center space-x-2"
+                                        data-sharer="facebook"
+                                        data-url="https://timeline.mktopulse.com">
                                     <i data-lucide="facebook" class="w-5 h-5"></i>
                                     <span>Facebook</span>
-                                </a>
+                                </button>
                             </div>
                         </div>
 
@@ -169,5 +172,8 @@
         document.querySelector('a[href*="whatsapp"]').href += currentURL;
         document.querySelector('a[href*="twitter"]').href += currentURL;
     </script>
+
+    <!-- Add Sharer.js -->
+    <script src="https://cdn.jsdelivr.net/npm/sharer.js@latest/sharer.min.js"></script>
 </body>
 </html> 
