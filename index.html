@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crowdfunding Campaign</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        lato: ['Lato', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white font-lato">
+    <!-- Hero Section -->
+    <main class="container mx-auto px-4 py-12">
+        <h1 class="text-3xl font-bold text-center mb-4">"Timeline" el primer álbum de Ramón García</h1>
+        <h2 class="text-2xl text-gray-400 text-center mb-12">Deja tu email y ¡llévate una recompensa gratis!</h2>
+
+        <!-- YouTube Video -->
+        <div class="max-w-3xl mx-auto mb-8">
+            <div class="aspect-w-16 aspect-h-9">
+                <!-- Replace VIDEO_ID with your actual YouTube video ID -->
+                <iframe class="w-full h-[400px]" 
+                        src="https://www.youtube.com/embed/FW83ILXFRHg" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- Single Column Section (replacing Two Column Section) -->
+        <div class="max-w-3xl mx-auto space-y-8">
+            <!-- Campaign Image -->
+            <div>
+                <img src="https://placehold.co/600x400" alt="Campaign Image" 
+                     class="rounded-lg shadow-lg w-full">
+            </div>
+
+            <!-- Text Content -->
+            <div class="flex flex-col space-y-8">
+                <div class="text-lg text-gray-300 leading-relaxed space-y-4">
+                    <p>¡Hola! Soy Ramón García y me encantaría poder contar contigo en esta nueva aventura.</p>
+                    <p>Voy a producir mi primer álbum y quiero que seas parte de él.</p>
+                    <p>El proyecto estará disponible en Verkami la primera semana de enero.</p>
+                    <p>Y quiero REGALARTE esta lámina tan molona. Para ello tienes que:</p>
+                    
+                    <ol class="list-decimal list-inside space-y-16 pl-4">
+                        <li>Compartir con 2 o más amigos esta página (haciendo clic en alguna de las redes sociales que hay abajo)</li>
+                        
+                        <!-- Sharing Section -->
+                        <div class="text-center max-w-2xl mx-auto mb-8">
+                            <div class="flex flex-wrap justify-center gap-4">
+                                <!-- WhatsApp -->
+                                <a href="https://api.whatsapp.com/send?text=¡Echa un vistazo al nuevo álbum de Ramón García! %0A%0A" 
+                                   target="_blank"
+                                   class="flex-1 min-w-[140px] max-w-[200px] bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg flex items-center justify-center space-x-2">
+                                    <i data-lucide="message-circle" class="w-5 h-5"></i>
+                                    <span>WhatsApp</span>
+                                </a>
+                                
+                                <!-- Twitter/X -->
+                                <a href="https://twitter.com/intent/tweet?text=¡Echa un vistazo al nuevo álbum de Ramón García!&url=" 
+                                   target="_blank"
+                                   class="flex-1 min-w-[140px] max-w-[200px] bg-black hover:bg-gray-800 text-white px-4 py-2 rounded-lg flex items-center justify-center space-x-2">
+                                    <i data-lucide="twitter" class="w-5 h-5"></i>
+                                    <span>Twitter</span>
+                                </a>
+                                
+                                <!-- Facebook -->
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=" 
+                                   target="_blank"
+                                   class="flex-1 min-w-[140px] max-w-[200px] bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg flex items-center justify-center space-x-2">
+                                    <i data-lucide="facebook" class="w-5 h-5"></i>
+                                    <span>Facebook</span>
+                                </a>
+                                
+                                <!-- Instagram -->
+                                <a href="https://www.instagram.com/ramongarcia.music" 
+                                   target="_blank"
+                                   class="flex-1 min-w-[140px] max-w-[200px] bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 hover:opacity-90 text-white px-4 py-2 rounded-lg flex items-center justify-center space-x-2">
+                                    <i data-lucide="instagram" class="w-5 h-5"></i>
+                                    <span>Instagram</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <li>Y después dejar tu email en el formulario de abajo.</li>
+                    </ol>
+                </div>
+                
+                <!-- Down Arrow -->
+                <div class="flex justify-center">
+                    <i data-lucide="chevron-down" class="w-12 h-12 animate-bounce"></i>
+                </div>
+
+                <!-- Mailjet Form -->
+                <div class="w-full">
+                    <iframe data-w-type="embedded" 
+                            frameborder="0" 
+                            scrolling="no" 
+                            marginheight="0" 
+                            marginwidth="0" 
+                            src="https://shhyq.mjt.lu/wgt/shhyq/xh29/form?c=a2ff926f" 
+                            width="100%" 
+                            class="h-[450px] border-0"></iframe>
+                </div>
+                <div class="text-lg text-gray-300 leading-relaxed space-y-4 mb-24">
+                    <p>Con esto ¡me ayudarás un montón a que este proyecto se haga realidad!</p>
+                    <p>
+                        ¡Ah! Recuerda mirar tu carpeta de SPAM y hacer clic en el link de confirmación que te llegará.
+                    </p>
+                    <p>
+                        Una vez apoyes el proyecto en Verkami, miraré si estás en esta lista y ¡te mandaré la lámina!
+                    </p>
+                    <p class="text-xl text-center">
+                       ¡Muchas gracias por tu apoyo!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add a spacer div -->
+        <div class="mb-24"></div>
+
+        <!-- Footer -->
+        <footer class="text-center py-8 border-t border-gray-800">
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="text-gray-400 hover:text-white">
+                    <i data-lucide="instagram" class="w-6 h-6"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white">
+                    <i data-lucide="facebook" class="w-6 h-6"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white">
+                    <i data-lucide="youtube" class="w-6 h-6"></i>
+                </a>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Mailjet Script -->
+    <script type="text/javascript" src="https://app.mailjet.com/pas-nc-embedded-v1.js"></script>
+    
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+
+    <!-- Add before closing body tag -->
+    <script>
+        // Get the current URL
+        const currentURL = encodeURIComponent(window.location.href);
+        
+        // Update share links with current URL
+        document.querySelectorAll('a[href*="sharer"]').forEach(link => {
+            link.href = link.href + currentURL;
+        });
+        document.querySelector('a[href*="whatsapp"]').href += currentURL;
+        document.querySelector('a[href*="twitter"]').href += currentURL;
+    </script>
+</body>
+</html> 
